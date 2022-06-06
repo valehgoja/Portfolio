@@ -1,0 +1,531 @@
+body{
+overflow-y: hidden;}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  width: calc(100% - 200px);
+  height: 60px;
+  align-items: center;
+  position: relative;
+  background-color: black;
+  color: white;
+}
+.menuList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+  text-decoration: none;
+}
+.aaaa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li a {
+  margin: 15px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.nameLogo {
+  margin-right: 64px;
+  font-size: 40px;
+}
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+}
+.navbar > ul > li {
+  white-space: nowrap;
+  padding: 10px 0 10px 30px;
+}
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0;
+  white-space: nowrap;
+  transition: 0.3s;
+  letter-spacing: 0.4px;
+  position: relative;
+  text-transform: uppercase;
+}
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar > ul > li > a :before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before,
+.navbar li:hover > a:before,
+.navbar .active:before {
+  visibility: visible;
+  background-color: red;
+  width: 80%;
+}
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #fff;
+}
+
+.backgroundHome {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.fullName {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.799);
+  margin-left: 35%;
+  margin-top: 13%;
+  font-size: 20px;
+}
+
+.container {
+  position: relative;
+}
+
+
+.wrapper {
+  position: absolute;
+  height: 100vh;
+}
+.typing-demo {
+  width: 20ch;
+  animation: typing 2s steps(10), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: Roboto;
+  font-size: 2em;
+  margin-left: 10px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.aboutDiv {
+  position: absolute;
+  width: 900px;
+  height: 450px;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 30px #ccc;
+}
+
+.motherDiv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+
+.photoDeveloper {
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 25px;
+  border-radius: 10px;
+  width: 125px;
+  height: 125px;
+}
+.title-bold {
+  font-weight: 600;
+}
+.about-info {
+  font-size: 15px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 200px;
+}
+
+.skillTag {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 30px;
+  font-weight: 600;
+}
+
+.JavaSE {
+  position: absolute;
+  margin-top: 240px;
+  margin-left: 30px;
+}
+.JavaBar {
+  position: absolute;
+  width: 300px;
+  height: 10px;
+  background-color: #82b6f2;
+}
+.JavaBar2 {
+  position: absolute;
+  width: 80%;
+  height: 10px;
+  background-color: green;
+}
+
+.JavaEE {
+  position: absolute;
+  margin-top: 290px;
+  margin-left: 30px;
+}
+.JavaEEBar {
+  position: absolute;
+  width: 300px;
+  height: 10px;
+  background-color: #82b6f2;
+}
+.JavaEEBar2 {
+  position: absolute;
+  width: 65%;
+  height: 10px;
+  background-color: green;
+}
+
+.Office {
+  position: absolute;
+  margin-top: 340px;
+  margin-left: 30px;
+}
+.OfficeBar {
+  position: absolute;
+  width: 300px;
+  height: 10px;
+  background-color: #82b6f2;
+}
+.OfficeBar2 {
+  position: absolute;
+  width: 90%;
+  height: 10px;
+  background-color: green;
+}
+
+.FrontEnd {
+  position: absolute;
+  margin-top: 390px;
+  margin-left: 30px;
+}
+.FrontBar {
+  position: absolute;
+  width: 300px;
+  height: 10px;
+  background-color: #82b6f2;
+}
+.FrontBar2 {
+  position: absolute;
+  width: 70%;
+  height: 10px;
+  background-color: green;
+}
+
+.title-about {
+  margin-left: 500px;
+  width: 250px;
+  height: 400px;
+}
+.about-text {
+  width: 200px;
+}
+.line {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 460px;
+  width: 2px;
+  height: 380px;
+  background-color: rgb(104, 175, 124);
+}
+.forCenter{
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px){
+  .all_service {
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  }
+  body{
+    overflow-y: scroll;
+  }
+  .service{
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 20px;
+    width: 350px;
+    height: 280px;
+    margin-bottom: 10px;
+  }
+   }
+
+.service-title {
+  text-align: center;
+  font-size: 80px;
+  color: black;
+}
+.line_service {
+  text-align: center;
+  width: 500px;
+  height: 2px;
+  background-color: #504d4d;
+  margin: 10px;
+}
+.service-info {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card_img {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.all_service {
+  display: flex;
+  justify-content: space-evenly;
+  overflow-y: hidden;
+  padding: 10px;
+
+}
+.service{
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 20px;
+  width: 350px;
+  height: 280px;
+}
+
+.javaLogo {
+  border: 10px solid #312f9c;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.service:hover .javaLogo {
+  border: 10px solid #82b6f2;
+  background-color: #312f9c;
+}
+
+.mini-title {
+  font-weight: 400;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.mini-subtitle {
+  display: flex;
+  justify-content: center;
+}
+
+
+.frontLogo {
+  border: 10px solid #312f9c;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.service:hover .frontLogo {
+  border: 10px solid #82b6f2;
+  background-color: #312f9c;
+}
+
+
+
+.officeLogo {
+  border: 10px solid #312f9c;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.service:hover .officeLogo {
+  border: 10px solid #82b6f2;
+  background-color: #312f9c;
+}
+
+
+@media screen and (max-width: 1000px){
+  .ctn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 400px;
+    height: auto;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    overflow-y: hidden;
+  }
+   }
+
+
+  .menu_img{
+    width: 20px;
+    height: 20px;
+   display: flex;
+   position: absolute;
+  }
+
+
+.hide_menu{
+  display: none;
+}
+@media screen and (max-width :1000px){
+  .navbar{
+    display: none;
+  }
+  .hide_menu{
+    display: flex;
+
+    
+  }
+}
+
+.ctn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 800px;
+  height: auto;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 10px #ccc;
+  overflow-y: hidden;
+}
+
+.ctn a{
+  text-decoration: none;
+
+}
+
+.contactDiv1{
+  display: flex;
+  
+padding: 10px;
+flex-direction: row;
+}
+
+.contactDiv2{
+  display: flex;
+padding: 10px;
+flex-direction: row;
+}
+
+.card {
+  width: 200px;
+  position: relative;
+  display: flex;
+  min-height: 200px;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.card::before {
+  border-style: solid;
+  border-width: 0 0 50px 50px;
+  border-color: transparent transparent #fff transparent;
+  transition: border 0.25s;
+}
+
+.card::after {
+  content: "Go";
+  bottom: 15px;
+  right: 15px;
+  color: #151515;
+  font-size: 21px;
+  opacity: 0;
+}
+
+.card:hover::before {
+  border-width: 0 0 100px 100px;
+}
+
+.card:hover::after {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.card_title {
+  margin: auto;
+  font-size: 36px;
+}
+h5 {
+  color: white;
+}
+
+.card_1 {
+ 
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+}
+
+.card_2 {
+ 
+  background: linear-gradient(43deg, #4158d0 100%, #c850c0 46%, #ffcc70 0%);
+}
+.card_3 {
+ 
+  background: #7084e8;
+}
+.card_4 {
+
+  background: #190605;
+}
+.card_5 {
+  
+  background: linear-gradient(43deg, #f39393 0%, #ff0000 46%, #f4f2f2 100%);
+}
+.card_6 {
+  
+  background: linear-gradient(43deg, #01691e 0%, #01fe16 46%, #55e434 100%);
+}
+
+h5 {
+  color: white;
+}
